@@ -85,7 +85,7 @@
 (defgeneric make-current (context))
 (defgeneric current-p (context &optional thread))
 (defgeneric done-current (context))
-(defgeneric hide (context))
+(defgeneric hide (context &key &allow-other-keys))
 (defgeneric show (context &key &allow-other-keys))
 (defgeneric visible-p (context))
 (defgeneric resize (context width height))

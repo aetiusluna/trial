@@ -115,7 +115,7 @@
 (defmethod done-current ((context context))
   (glfw:make-current NIL))
 
-(defmethod hide ((context context))
+(defmethod hide ((context context) &key)
   (glfw:hide context)
   (setf (visible-p context) NIL))
 
